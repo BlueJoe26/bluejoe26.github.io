@@ -2,17 +2,51 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>デイリーポスト - ホーム</title>
-    <style>body { font-family: sans-serif; padding: 30px; max-width: 800px; margin: auto; line-height: 1.6; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Post - TikTok Automation Script</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; background-color: #f8f9fa; line-height: 1.6; }
+        header { background: #111; color: #fff; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        .container { max-width: 800px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #111; padding-bottom: 10px; margin-top: 30px; }
+        .feature-box { background: #e9ecef; padding: 15px 20px; border-left: 5px solid #28a745; margin-bottom: 20px; }
+        .alert-box { background: #fff3cd; padding: 15px 20px; border-left: 5px solid #ffc107; margin-bottom: 20px; }
+        footer { text-align: center; padding: 30px; margin-top: 20px; font-size: 0.9em; color: #666; }
+        a { color: #007bff; text-decoration: none; margin: 0 10px; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-    <h1>デイリーポスト (Daily Post)</h1>
-    <p>「デイリーポスト」は、個人が作成した動画をTikTokへ自動アップロードするための専用連携ツールです。</p>
-    <p>※本アプリは開発者自身の個人利用を目的としており、一般向けの公開や提供は行っておりません。</p>
-    <hr>
-    <ul>
-        <li><a href="terms.html">利用規約 (Terms of Service)</a></li>
-        <li><a href="privacy.html">プライバシーポリシー (Privacy Policy)</a></li>
-    </ul>
+    <header>
+        <h1>Daily Post</h1>
+        <p>Official Documentation & Information Page</p>
+    </header>
+    
+    <div class="container">
+        <h2>About This Tool</h2>
+        <p>「Daily Post」は、開発者自身がローカル環境（自身のPC上）で動画を自動生成し、TikTokへダイレクト投稿するために開発された専用のPythonスクリプトです。</p>
+        
+        <div class="feature-box">
+            <h3>Key Features (主な機能)</h3>
+            <ul>
+                <li>AIを活用した台本・動画の自動生成処理</li>
+                <li>TikTok Content Posting APIを利用したダイレクトアップロード</li>
+                <li>コマンドライン（CLI）からのワンストップ実行</li>
+            </ul>
+        </div>
+
+        <div class="alert-box">
+            <h3>⚠️ No Web Login Required (テストアカウントについて)</h3>
+            <p>本ツールはWebブラウザ上で動作するサービス（SaaS）ではなく、<strong>ローカルPCのターミナルから実行するCLIツール（Pythonスクリプト）</strong>です。<br>
+            そのため、<strong>Webサイト上のログイン画面やアカウント機能は一切存在しません。</strong>このページはツールの仕様と規約を明示するための公式ドキュメントページです。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Daily Post Project.</p>
+        <a href="terms.html">利用規約 (Terms of Service)</a>
+        <a href="privacy.html">プライバシーポリシー (Privacy Policy)</a>
+    </footer>
 </body>
 </html>
