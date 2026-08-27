@@ -1,0 +1,59 @@
+---
+// src/layouts/BlogPost.astro
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  pr: boolean;
+  priceCheckedAt?: Date;
+}
+const { title, description, date, pr, priceCheckedAt } = Astro.props;
+---
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header>
+      <a href="/">← トップへ</a>
+      <a href="/blog/">記事一覧</a>
+    </header>
+
+    <main>
+      {pr && (
+        <p class="pr-disclosure">
+          <strong>PR</strong> この記事にはアフィリエイトリンクが含まれます。
+        </p>
+      )}
+
+      <h1>{title}</h1>
+      <p class="meta">
+        公開日: {date.toLocaleDateString("ja-JP")}
+        {priceCheckedAt && (
+          <> / 価格確認日: {priceCheckedAt.toLocaleDateString("ja-JP")}（価格は変動します）</>
+        )}
+      </p>
+
+      <article>
+        <slot />
+      </article>
+    </main>
+
+    <style>
+      main { max-width: 720px; margin: 0 auto; padding: 1.5rem; line-height: 1.8; }
+      .pr-disclosure {
+        background: #fff3e0;
+        border: 1px solid #ffcc80;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+      }
+      .meta { color: #666; font-size: 0.85rem; }
+      table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+      th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+    </style>
+  </body>
+</html>
