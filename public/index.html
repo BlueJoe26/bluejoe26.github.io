@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Post - TikTok Automation Script</title>
+    <title>Daily Post - TikTok Creator Tool</title>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; background-color: #f8f9fa; line-height: 1.6; }
         header { background: #111; color: #fff; padding: 40px 20px; text-align: center; }
@@ -20,33 +20,36 @@
 <body>
     <header>
         <h1>Daily Post</h1>
-        <p>Official Documentation & Information Page</p>
+        <p>Official Documentation &amp; Information Page</p>
     </header>
     
     <div class="container">
         <h2>About This Tool</h2>
-        <p>「Daily Post」は、開発者自身がローカル環境（自身のPC上）で動画を自動生成し、TikTokへダイレクト投稿するために開発された専用のPythonスクリプトです。</p>
+        <p>Daily Post is a desktop tool for TikTok creators who produce original short videos on their own computer. It sends a creator's own videos to their own TikTok account as drafts, so the creator can review, edit and publish them in the TikTok app.</p>
         
         <div class="feature-box">
-            <h3>Key Features (主な機能)</h3>
-            <ul>
-                <li>AIを活用した台本・動画の自動生成処理</li>
-                <li>TikTok Content Posting APIを利用したダイレクトアップロード</li>
-                <li>コマンドライン（CLI）からのワンストップ実行</li>
-            </ul>
+            <h3>How It Works</h3>
+            <ol>
+                <li>Sign in with your TikTok account through TikTok OAuth and grant the requested permissions.</li>
+                <li>Select an original video and caption you created on your computer.</li>
+                <li>Daily Post uploads the video to your TikTok inbox as a draft, using TikTok's Content Posting API.</li>
+                <li>Review, edit and publish the draft in the TikTok app. Daily Post never publishes content directly.</li>
+            </ol>
         </div>
 
+        <h2>Who Can Use Daily Post</h2>
+        <p>Any TikTok creator can use Daily Post with their own TikTok account. The tool is not tied to a specific account: each user signs in with their own account, and only their own content is uploaded to their own account.</p>
+
         <div class="alert-box">
-            <h3>⚠️ No Web Login Required (テストアカウントについて)</h3>
-            <p>本ツールはWebブラウザ上で動作するサービス（SaaS）ではなく、<strong>ローカルPCのターミナルから実行するCLIツール（Pythonスクリプト）</strong>です。<br>
-            そのため、<strong>Webサイト上のログイン画面やアカウント機能は一切存在しません。</strong>このページはツールの仕様と規約を明示するための公式ドキュメントページです。</p>
+            <h3>Data and Privacy</h3>
+            <p>Daily Post runs locally on your device and does not operate a server that receives your videos or account data. Access tokens are stored only on your own device. See our Privacy Policy and Terms of Service for details.</p>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Daily Post Project.</p>
-        <a href="terms.html">利用規約 (Terms of Service)</a>
-        <a href="privacy.html">プライバシーポリシー (Privacy Policy)</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
     </footer>
 </body>
 </html>
