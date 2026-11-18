@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Post - TikTok Creator Tool</title>
+    <title>Daily Post</title>
+    <meta name="description" content="Daily Post is a desktop tool that uploads original short videos you made locally to your own TikTok account as drafts.">
+    <meta property="og:title" content="Daily Post">
+    <meta property="og:description" content="Daily Post is a desktop tool that uploads original short videos you made locally to your own TikTok account as drafts.">
+    <meta property="og:image" content="icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; background-color: #f8f9fa; line-height: 1.6; }
         header { background: #111; color: #fff; padding: 40px 20px; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5em; }
+        header img.logo { width: 96px; height: 96px; border-radius: 22px; }
+        header h1 { margin: 10px 0 0; font-size: 2.5em; }
         .container { max-width: 800px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         h2 { border-bottom: 2px solid #111; padding-bottom: 10px; margin-top: 30px; }
         .feature-box { background: #e9ecef; padding: 15px 20px; border-left: 5px solid #28a745; margin-bottom: 20px; }
         .alert-box { background: #fff3cd; padding: 15px 20px; border-left: 5px solid #ffc107; margin-bottom: 20px; }
         footer { text-align: center; padding: 30px; margin-top: 20px; font-size: 0.9em; color: #666; }
+        footer img.logo-small { width: 32px; height: 32px; border-radius: 7px; vertical-align: middle; margin-right: 8px; }
         a { color: #007bff; text-decoration: none; margin: 0 10px; }
         a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <header>
+        <img class="logo" src="icon.png" alt="Daily Post logo">
         <h1>Daily Post</h1>
-        <p>Official Documentation &amp; Information Page</p>
+        <p>Official website of the Daily Post desktop tool</p>
     </header>
-    
+
     <div class="container">
-        <h2>About This Tool</h2>
+        <h2>About Daily Post</h2>
         <p>Daily Post is a desktop tool for TikTok creators who produce original short videos on their own computer. It sends a creator's own videos to their own TikTok account as drafts, so the creator can review, edit and publish them in the TikTok app.</p>
-        
+
+        <h2>Features</h2>
+        <ul>
+            <li>Sign in securely with your own TikTok account through TikTok OAuth (Login Kit).</li>
+            <li>Upload original videos you created locally, together with their captions, to your own TikTok account as drafts (Content Posting API).</li>
+            <li>Drafts only: Daily Post never publishes content directly. Final review, editing and publishing always happen in the TikTok app, by you.</li>
+            <li>Runs entirely on your own computer. Access tokens are stored only on your own device, and no server operated by Daily Post receives your videos or account data.</li>
+        </ul>
+
         <div class="feature-box">
             <h3>How It Works</h3>
             <ol>
@@ -40,6 +58,14 @@
         <h2>Who Can Use Daily Post</h2>
         <p>Any TikTok creator can use Daily Post with their own TikTok account. The tool is not tied to a specific account: each user signs in with their own account, and only their own content is uploaded to their own account.</p>
 
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Start the Daily Post tool on your computer.</li>
+            <li>Choose "Sign in with TikTok" and authorize Daily Post in your browser.</li>
+            <li>Pick a video file and caption, then send it to your TikTok drafts.</li>
+            <li>Open the TikTok app to review, edit and publish the draft.</li>
+        </ol>
+
         <div class="alert-box">
             <h3>Data and Privacy</h3>
             <p>Daily Post runs locally on your device and does not operate a server that receives your videos or account data. Access tokens are stored only on your own device. See our Privacy Policy and Terms of Service for details.</p>
@@ -47,7 +73,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Daily Post Project.</p>
+        <p><img class="logo-small" src="icon.png" alt="Daily Post logo">&copy; 2026 Daily Post.</p>
         <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
     </footer>
